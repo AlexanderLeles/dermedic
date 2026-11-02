@@ -374,6 +374,53 @@ section{padding-block:64px}
 .qr-more{display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:999px;border:1px solid var(--line);color:var(--blue);font-size:12px;font-weight:600}
 .qr-note{font-size:11px;color:var(--ink-2);line-height:1.5;padding:12px 14px;border-radius:12px;background:var(--azure)}
 .qr-again{justify-self:center;font-size:13px;font-weight:600;color:var(--blue);padding:8px}
+.st-res-head{border-radius:20px;padding:18px;background:linear-gradient(130deg,#2A9FC9,var(--blue));color:#fff;display:grid;gap:6px}
+.st-res-head b{font-size:20px;font-weight:600;line-height:1.25}
+.st-res-head p{font-size:13px;opacity:.92;margin:0}
+.st-why{grid-column:2/-1;font-size:12.5px;line-height:1.45;color:var(--ink);background:var(--azure);border-radius:10px;padding:8px 10px}
+.st-why b{color:var(--blue);font-weight:600}
+.st-tip{display:grid;grid-template-columns:22px 1fr;gap:10px;font-size:13px;line-height:1.5;padding:12px 14px;border-radius:14px;border:1px dashed var(--sky);color:var(--ink)}
+.st-tip svg{width:20px;height:20px;color:var(--blue)}
+.st-warn{font-size:12px;line-height:1.5;color:#8A4B00;background:#FFF5E6;border-radius:12px;padding:10px 14px}
+.sci-home{padding-block:56px 0}
+.sci{display:grid;gap:14px;--lc:var(--blue)}
+.sci-chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-inline:calc(-1 * var(--gutter-l)) calc(-1 * var(--gutter-r));padding:2px var(--gutter-r) 2px var(--gutter-l)}
+.sci-chips::-webkit-scrollbar{display:none}
+.sci-chip{flex:none;height:38px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:13px;color:var(--ink);white-space:nowrap;transition:background .25s,color .25s,border-color .25s}
+.sci-chip b{font-weight:700}
+.sci-chip.on{background:var(--lc);border-color:var(--lc);color:#fff}
+.sci-card{border-radius:24px;border:1px solid var(--line);background:#fff;overflow:hidden;box-shadow:0 24px 48px -36px rgba(0,104,180,.55);display:grid}
+.sci-stage{position:relative;background:#fff;border-bottom:1px solid var(--line)}
+.sci-stage canvas{display:block;width:100%;aspect-ratio:3/2}
+.sci-tag{position:absolute;left:12px;bottom:10px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--lc);background:rgba(255,255,255,.88);padding:4px 9px;border-radius:999px}
+.sci-bars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:10px 18px 0}
+.sci-bar{position:relative;height:22px}
+.sci-bar::before,.sci-bar i{content:"";position:absolute;left:0;top:9px;height:4px;border-radius:4px}
+.sci-bar::before{right:0;background:var(--azure)}
+.sci-bar i{width:0;background:var(--lc)}
+.sci-bar.done i{width:100%}
+@keyframes sciBar{from{width:0}to{width:100%}}
+.sci-txt{padding:2px 18px 4px;display:grid;gap:5px;align-content:start;min-height:128px}
+.sci-txt small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--lc);font-weight:700}
+.sci-txt b{font-size:18px;font-weight:600;line-height:1.25;color:var(--ink)}
+.sci-txt p{font-size:13.5px;line-height:1.5;color:var(--ink-2);margin:0}
+.sci-txt.in{animation:sciIn .5s cubic-bezier(.2,.8,.2,1)}
+@keyframes sciIn{from{opacity:0;transform:translateY(6px)}}
+.sci-acts{padding:0 18px 16px}
+.sci-cat{font-size:13px;font-weight:600;color:var(--lc);padding:6px 0}
+.sci-how{display:inline-flex;align-items:center;gap:8px;justify-self:start;height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--lc);color:var(--lc);font-size:13px;font-weight:600;background:#fff;margin-top:4px}
+.sci-how svg{width:16px;height:16px}
+@media (min-width:860px){.sci-card{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);grid-template-rows:auto auto 1fr}.sci-stage{grid-row:1/4;border-bottom:0;border-right:1px solid var(--line)}.sci-bars{padding-top:28px}.sci-txt b{font-size:22px}.sci-txt p{font-size:15px}.sci-acts{align-self:end}}
+.ring{position:relative;width:84px;height:84px;flex:none}
+.ring svg{width:100%;height:100%;display:block}
+.r-bg{fill:none;stroke:#fff;stroke-width:7}
+.r-fg{fill:none;stroke:var(--lc,var(--blue));stroke-width:7;stroke-linecap:round}
+.ring-v{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--lc,var(--blue))}
+.ring-v i svg{width:13px;height:13px;display:block}
+.ring-v b{font-size:17px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.ring-v sup{font-size:10px;font-weight:600;margin-left:1px}
+.clin .clin-c{grid-template-columns:84px minmax(0,1fr);align-items:center;gap:14px;background:var(--azure);border:0}
+.clin .clin-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 @media (max-width:420px){.qz-banner{grid-template-columns:auto 1fr;padding:16px}.qz-b-go{grid-column:1/-1;justify-content:center}.qz-opt{padding:12px}}
 @media (max-width:340px){.qz-opts{grid-template-columns:1fr}}
 .share-btn{justify-self:start;display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 16px;border-radius:999px;border:1px solid var(--line);color:var(--blue);font-size:13px;font-weight:600;margin-top:-6px}
@@ -598,6 +645,17 @@ section{padding-block:64px}
         <span class="qz-b-txt"><span class="eyebrow">Не знаете, что выбрать?</span><b>Подберите уход за 30 секунд</b><small>Несколько вопросов — и готовая схема ухода утром и вечером</small></span>
         <span class="qz-b-go">Начать <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </button>
+    </div>
+  </section>
+
+  <section class="sci-home" aria-label="Наука Dermedic">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Наука Dermedic</span>
+        <h2>Как работает <b>формула</b></h2>
+        <p>Посмотрите, что происходит в коже — и как на это отвечают активные компоненты каждой линейки.</p>
+      </div>
+      <div id="sciHome"></div>
     </div>
   </section>
 
@@ -1050,6 +1108,7 @@ function renderCatalog(filter = ""){
           <h2 class="line-name">${lineName(l)}${l.sub ? `<small>· ${esc(l.sub)} ·</small>` : ""}</h2>
           <p>${esc(l.about)}</p>
           <p class="line-key"><b>Ключевое:</b> ${esc(l.key)}</p>
+          ${SCI[l.id] ? `<button class="sci-how" data-sciopen="${l.id}" data-from="catalog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z" fill="currentColor"/></svg>Как это работает</button>` : ""}
           ${l.id === "sunbrella" ? `<button class="spf-open" data-spfopen="catalog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16M9 4v16"/></svg>Сравнить все средства SPF</button>` : ""}
         </div>
       </div>
@@ -1221,11 +1280,34 @@ const QI = {
 // Дерево вопросов: каждый ответ ведёт к следующему вопросу (next) или к результату (r)
 const QUIZ = {
   who:  { q:"Для кого подбираем уход?", o:[
-    { t:"Для себя", s:"Взрослая кожа", i:"me", next:"need" },
+    { t:"Для себя", s:"Взрослая кожа", i:"me", next:"why" },
     { t:"Для ребёнка", s:"С первого дня жизни", i:"kid", next:"kid" } ] },
+  why:  { q:"С чем пришли сегодня?", sub:"Подберём ежедневный уход или подскажем, что поможет именно сейчас", o:[
+    { t:"Подобрать ежедневный уход", s:"Сухость, покраснения, акне, пятна, возраст, волосы, SPF", i:"full", next:"need", wide:true },
+    { t:"После процедур или лечения", s:"Пилинг, лазер, ретиноиды, ожог", i:"spark", c:"#2A9FC9", next:"sProc" },
+    { t:"Кожа раздражена сейчас", s:"Покраснение, зуд, после бритья", i:"red", c:"#C8326E", next:"sReact" },
+    { t:"Сезон и образ жизни", s:"Отопление, экраны, море, сухие руки", i:"sea", c:"#0068B4", next:"sLife", wide:true } ] },
+  sProc:{ q:"Что произошло?", o:[
+    { t:"Была косметологическая процедура", s:"Пилинг, лазер, мезотерапия, чистка", i:"spark", r:"s:post-proc", wide:true },
+    { t:"Лечу акне у дерматолога", s:"Ретиноиды, антибиотики", i:"rx", r:"s:acne-rx" },
+    { t:"Обгорел(а) на солнце", s:"Кожа красная, горит", i:"sun", r:"s:sunburn" } ] },
+  sReact:{ q:"Что происходит с кожей?", o:[
+    { t:"Покраснела и жжёт", s:"От холода, ветра, стресса", i:"red", r:"s:redness-flare" },
+    { t:"Обострение атопии, зуд", s:"Сухие очаги, расчёсы", i:"atopy", r:"s:atopy-flare" },
+    { t:"Раздражение после бритья", s:"Покраснение, жжение, порезы", i:"razor", r:"s:shaving", wide:true } ] },
+  sLife:{ q:"Что из этого про вас?", o:[
+    { t:"Отопление, мороз, кондиционер", s:"Кожа сухая и стянута", i:"dry", r:"s:heating" },
+    { t:"Много работаю за экраном", s:"Усталые глаза, тусклая кожа", i:"screen", r:"s:screens" },
+    { t:"Еду на море", s:"Защита от солнца", i:"sea", r:"s:vacation" },
+    { t:"Сухие руки", s:"Частое мытьё, антисептики", i:"hand", r:"s:hands" } ] },
+  flash:{ q:"Беспокоят приливы жара?", sub:"Часто бывает в период пременопаузы и менопаузы", o:[
+    { t:"Да", s:"Кожу бросает в жар", i:"sun", r:"s:hot-flashes" },
+    { t:"Нет", s:"Нужен антивозрастной уход", i:"no", next:"amount" } ] },
   kid:  { q:"Что нужно ребёнку?", o:[
     { t:"Ежедневный уход", s:"Сухая, атопичная, раздражённая кожа", i:"atopy", r:"kidCare" },
-    { t:"Защита от солнца", s:"Прогулки, пляж, отпуск", i:"sun", next:"kidAge" } ] },
+    { t:"Защита от солнца", s:"Прогулки, пляж, отпуск", i:"sun", next:"kidAge" },
+    { t:"Новорождённый: сухая кожа", s:"Шелушение с первых дней", i:"kid", r:"s:newborn" },
+    { t:"Опрелости под подгузником", s:"Покраснение в складках", i:"kid", r:"s:diaper" } ] },
   kidAge:{ q:"Сколько лет ребёнку?", o:[
     { t:"До 6 месяцев", i:"kid", r:"kidSunS" },
     { t:"Старше 6 месяцев", i:"kid", r:"kidSunL" } ] },
@@ -1234,13 +1316,13 @@ const QUIZ = {
     { t:"Покраснения, сосудики", i:"red", c:"#C8326E", next:"amount", line:"redness" },
     { t:"Прыщи, жирный блеск", i:"acne", c:"#21A49A", next:"rx" },
     { t:"Пигментные пятна", i:"spot", c:"#0D4E79", next:"amount", line:"melumin" },
-    { t:"Морщины, потеря упругости", i:"age", c:"#E39A2D", next:"amount", line:"oilage" },
+    { t:"Морщины, потеря упругости", i:"age", c:"#E39A2D", next:"flash", line:"oilage" },
     { t:"Очень сухая кожа, зуд, атопия", i:"atopy", c:"#2A9FC9", r:"cicatopy" },
     { t:"Волосы и кожа головы", i:"hair", c:"#1B8FD6", next:"hair" },
     { t:"Защита от солнца", i:"sun", c:"#EF7A22", next:"sun" } ] },
   rx:   { q:"Сейчас лечите акне у дерматолога?", sub:"Например, ретиноидами или антибиотиками", o:[
     { t:"Нет", s:"Нужен ежедневный уход", i:"no", next:"amount", line:"normacne" },
-    { t:"Да, прохожу лечение", s:"Нужен мягкий увлажняющий уход", i:"rx", next:"amount", line:"normacneRx" } ] },
+    { t:"Да, прохожу лечение", s:"Нужен мягкий увлажняющий уход", i:"rx", r:"s:acne-rx" } ] },
   hair: { q:"Что именно беспокоит?", o:[
     { t:"Выпадение волос", i:"hair", r:"capLoss" }, { t:"Перхоть", i:"spot", r:"capDand" },
     { t:"Быстро жирнеет", i:"dry", r:"capOily" }, { t:"Зуд и раздражение", i:"atopy", r:"capSens" },
@@ -1272,6 +1354,7 @@ function quizPick(k){
   track("quiz_answer", { q: qz.path[qz.path.length - 1], a: o.t });
   if (o.line) qz.line = o.line;
   if (o.next) { qz.path.push(o.next); quizRender(); return; }
+  if (o.r.startsWith("s:")) { situResult(o.r.slice(2), "quiz"); return; }
   let r = o.r, mode = "full";
   if (r.startsWith("$line:")) { mode = r.split(":")[1]; r = qz.line; }
   quizResult(r, mode);
@@ -1307,12 +1390,62 @@ function quizResult(key, mode){
 document.addEventListener("click", e => {
   const s1 = e.target.closest("[data-quiz]"); if (s1) { e.preventDefault(); quizStart(s1.dataset.quiz); return; }
   const o = e.target.closest("[data-qopt]"); if (o) { quizPick(+o.dataset.qopt); return; }
-  if (e.target.closest("[data-qback]")) { qz.path.pop(); quizRender(); return; }
+  if (e.target.closest("[data-qback]")) { if (e.target.closest(".qz") && !e.target.closest(".qz").querySelector(".qz-opts")) { quizRender(); return; } qz.path.pop(); quizRender(); return; }
   if (e.target.closest("[data-qagain]")) { quizStart("again"); return; }
   const pm = e.target.closest("[data-qprod]"); if (pm) { const f = findProduct(pm.dataset.qprod); if (f) { openProduct(f.l.id, f.i); $("#sheetBody").insertAdjacentHTML("afterbegin", `<button class="qz-back" data-qret="1" style="margin-bottom:14px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg>Вернуться к подбору</button>`); } return; }
   if (e.target.closest("[data-qret]") && qz && qz.last) { quizResult(qz.last[0], qz.last[1]); return; }
   const qb = e.target.closest("[data-quizbuy]"); if (qb) track("quiz_buy", { result: qb.dataset.quizbuy, product: qb.dataset.product });
 });
+
+/* ===================== ПОДБОР ПО СИТУАЦИИ ===================== */
+// Тексты «почему» основаны на официальных показаниях производителя (поле src). Перед запуском — проверка врачом.
+const SITU = [{"id": "post-proc", "cat": "После процедур и лечения", "t": "После косметологических процедур", "s": "Пилинг, лазер, мезотерапия, чистка", "ic": "spark", "p": [["hydrain-1", "Успокаивает и снижает риск раздражения после процедур — производитель прямо рекомендует её после пилинга, лазера и мезотерапии"], ["cicatopy-1", "SOS-крем: поддерживает восстановление кожи после косметологических процедур, снимает жжение и стянутость"], ["sunbrella-5", "После процедур кожа особенно чувствительна к солнцу — ультралёгкая защита SPF 50+ для реактивной кожи"]], "tip": "Пока кожа восстанавливается, не используйте скрабы и средства с кислотами без разрешения косметолога. SPF 50+ — каждый день, даже в пасмурную погоду.", "src": "Термальная вода: «после дерматологических и косметологических процедур (химические пилинги, лазер, мезотерапия)». Cicatopy: показания — «кожа после косметологических процедур»."}, {"id": "acne-rx", "cat": "После процедур и лечения", "t": "Лечу акне у дерматолога", "s": "Ретиноиды, антибиотики, сухость и шелушение", "ic": "rx", "p": [["normacne-3", "Создан как вспомогательный уход при лечении акне ретиноидами и антибиотиками: глубоко увлажняет и успокаивает"], ["normacne-7", "Мягкая пенка: очищает, не пересушивая кожу, которая и так раздражена лечением"], ["cicatopy-1", "Если появились шелушение и микротрещины — поддерживает восстановление и снимает раздражение"], ["sunbrella-6", "Ретиноиды повышают чувствительность к солнцу — лёгкая защита SPF 50+ для жирной кожи"]], "tip": "Сыворотку с кислотами и ночной крем против несовершенств во время лечения применяйте только после согласования с врачом.", "src": "Normacne ультраувлажняющий крем: «для вспомогательного ухода при терапии акне, во время лечения ретиноидами и при приёме антибиотиков»."}, {"id": "sunburn", "cat": "После процедур и лечения", "t": "Обгорели на солнце", "s": "Кожа красная, горит, стянута", "ic": "sun", "p": [["cicatopy-1", "Показан при солнечных ожогах: быстро снимает жжение и стянутость, поддерживает восстановление кожи"], ["hydrain-1", "Освежает и успокаивает — можно распылять несколько раз в день на лицо и тело"]], "tip": "Если появились волдыри, озноб, температура или ожог занимает большую площадь — обратитесь к врачу.", "src": "Cicatopy ультрауспокаивающий крем: показания — «солнечные ожоги». Термальная вода: «уход за кожей после воздействия солнца или мороза»."}, {"id": "heating", "cat": "Сезон и образ жизни", "t": "Отопление, мороз, кондиционер", "s": "Кожа сухая, стянута, шелушится", "ic": "dry", "p": [["hydrain-2", "Лёгкое увлажнение до 48 часов — производитель называет отопительный сезон и кондиционер главными врагами сухой кожи"], ["hydrain-1", "Быстро освежает и увлажняет в течение дня, можно поверх макияжа"], ["hydrain-10", "Для сухой кожи тела: зимой и после бассейна сухость усиливается"], ["cicatopy-4", "Для рук, которые трескаются от холода и частого мытья"]], "tip": "Добавьте увлажнитель воздуха в спальне и не умывайтесь горячей водой — это усиливает сухость.", "src": "Hydrain крем-гель: «при низкой влажности воздуха, в помещении с кондиционером и в отопительный сезон проблема усиливается». Hydrain баттер: «зимой и при частом контакте с хлорированной водой»."}, {"id": "screens", "cat": "Сезон и образ жизни", "t": "Много работаю за экраном", "s": "Усталые глаза, тусклая кожа", "ic": "screen", "p": [["hydrain-6", "Помогает уменьшить ощущение усталости глаз после работы за экраном, увлажняет и снимает отёчность"], ["sunbrella-2", "Защищает в том числе от синего света экранов, невидим на коже"], ["hydrain-1", "Освежает кожу в течение рабочего дня, можно поверх макияжа"]], "tip": "Каждые 1–2 часа делайте перерыв для глаз на 5 минут.", "src": "Hydrain крем под глаза: «снижает субъективное ощущение усталости глаз после работы с экранами». Sunbrella увлажняющий SPF 50+: «защищает от городского излучения, включая свет экранов»."}, {"id": "vacation", "cat": "Сезон и образ жизни", "t": "Еду на море", "s": "Защита от солнца для всей семьи", "ic": "sea", "p": [["sunbrella-11", "Водостойкий спрей для тела SPF 50+ — удобно наносить на большие участки"], ["sunbrella-5", "Для лица: ультралёгкий флюид SPF 50+ подходит даже чувствительной коже"], ["cicatopy-1", "Возьмите с собой на случай, если всё же обгорите"]], "tip": "Обновляйте защиту каждые 2 часа и после купания. Для детей — отдельная линейка, смотрите «Ребёнок на солнце».", "src": "Sunbrella спрей: «водостойкая формула», «повторять каждые 2 часа». Cicatopy: показания — «солнечные ожоги»."}, {"id": "shaving", "cat": "Сезон и образ жизни", "t": "Раздражение после бритья", "s": "Покраснение, жжение, мелкие порезы", "ic": "razor", "p": [["cicatopy-1", "Показан при раздражении после бритья и микроповреждениях кожи"], ["hydrain-1", "Сразу успокаивает и уменьшает ощущение жжения"]], "tip": "Брейтесь по направлению роста волос и меняйте лезвие чаще.", "src": "Cicatopy ультрауспокаивающий крем: показания — «раздражение после бритья», «микроповреждения эпидермиса»."}, {"id": "hands", "cat": "Сезон и образ жизни", "t": "Сухие руки", "s": "Частое мытьё, антисептики, холод", "ic": "hand", "p": [["cicatopy-4", "Производитель рекомендует наносить после каждого мытья рук: восстанавливает сухую, потрескавшуюся кожу"], ["cicatopy-2", "На ночь — для очень сухих участков: руки, локти, колени"]], "tip": "Держите крем рядом с раковиной — так проще не забывать.", "src": "Cicatopy крем для рук: «рекомендуется наносить после каждого мытья рук». Cicatopy средство для тела: «подходит для рук, стоп, локтей, коленей»."}, {"id": "hot-flashes", "cat": "Возраст и гормоны", "t": "Приливы, пременопауза", "s": "Кожа теряет упругость, бросает в жар", "ic": "age", "p": [["oilage-2", "Дневной крем с охлаждающей формулой CoolPoint — помогает коже при приливах, возвращает плотность"], ["oilage-3", "Ночью восстанавливает плотность и упругость, подтягивает овал лица"], ["oilage-1", "Антиоксидантная сыворотка для кожи, которая стала сухой и тусклой"]], "tip": "Если приливы сильно мешают жизни — обсудите это с гинекологом.", "src": "Oilage дневной крем: «формула CoolPoint поддерживает терморегуляцию эпидермиса при приливах жара»."}, {"id": "redness-flare", "cat": "Кожа реагирует", "t": "Кожа покраснела и жжёт", "s": "От холода, ветра, стресса, перепадов температуры", "ic": "red", "p": [["redness-3", "Крем-концентрат быстро снимает покраснение, жжение и зуд, охлаждает разгорячённую кожу"], ["redness-1", "Сыворотка снижает реактивность кожи к внешним факторам"], ["hydrain-1", "Мгновенно успокаивает — можно распылять в течение дня"]], "tip": "Избегайте горячей воды, бани, острой еды и алкоголя в период обострения.", "src": "Redness крем-концентрат: «быстро приносит облегчение, уменьшая покраснения, раздражение, жжение и зуд». Термальная вода: «реагирует покраснением на перепады температуры, ветер»."}, {"id": "atopy-flare", "cat": "Кожа реагирует", "t": "Обострение атопии, сильный зуд", "s": "Сухие очаги, расчёсы", "ic": "atopy", "p": [["cicatopy-1", "SOS-крем на очаги: снимает зуд и жжение, помогает заживлению расчёсов, можно на веки"], ["cicatopy-3", "Лёгкий бальзам для тела с 10% мочевины: уменьшает зуд уже после первого нанесения"], ["cicatopy-2", "Для очень сухих участков тела в период ремиссии"]], "tip": "Эмоленты наносите не реже 2 раз в день, сразу после душа на влажную кожу. Лечение обострения назначает врач.", "src": "Cicatopy бальзам: «уменьшает ощущение зуда уже после первого нанесения». Cicatopy крем: «помогает разорвать замкнутый круг атопии»."}, {"id": "newborn", "cat": "Дети", "t": "Новорождённый: сухая кожа", "s": "Шелушение, раздражение с первых дней", "ic": "kid", "p": [["baby-1", "Интенсивно питает и восстанавливает барьер сухой кожи малыша с первого дня жизни"], ["cicatopy-1", "Для раздражённых участков лица и тела, можно с первого дня жизни"]], "tip": "Купайте малыша в тёплой, не горячей воде, после купания промокните кожу и сразу нанесите средство.", "src": "Baby масло: «для младенцев и детей с очень сухой, атопичной и чувствительной кожей», с 1-го дня. Cicatopy: «взрослым и детям с первого дня жизни»."}, {"id": "diaper", "cat": "Дети", "t": "Опрелости, раздражение под подгузником", "s": "Покраснение в складках", "ic": "kid", "p": [["cicatopy-1", "Показан при опрелостях и раздражении в области подгузника, с первого дня жизни"]], "tip": "Чаще меняйте подгузник и давайте коже подышать. Если появились гнойнички или раздражение не проходит 2–3 дня — к педиатру.", "src": "Cicatopy ультрауспокаивающий крем: показания — «уход при опрелостях и в области подгузника»."}];
+Object.assign(QI, {
+  spark:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M18.5 15.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></svg>',
+  screen:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M9 20h6M12 16.5V20"/></svg>',
+  sea:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 15c2-1.6 4-1.6 6 0s4 1.6 6 0 4-1.6 6 0M3 19.5c2-1.6 4-1.6 6 0s4 1.6 6 0 4-1.6 6 0"/><circle cx="16" cy="7" r="3"/></svg>',
+  razor:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="5" rx="1.5"/><path d="M12 9v11M7 6.5h10"/></svg>',
+  hand:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12V5.5a1.5 1.5 0 0 1 3 0V11M11 10.5V4a1.5 1.5 0 0 1 3 0v6.5M14 10.5V5.5a1.5 1.5 0 0 1 3 0V14c0 4-2.5 7-6 7-2.5 0-4-1.2-5.5-3.5L3.8 15a1.5 1.5 0 0 1 2.5-1.7L8 15.5"/></svg>'
+});
+const sIco = k => k === "kid" ? I.kid : (QI[k] || QI.spark);
+let stLast = null;
+function situResult(id, from){
+  const s = SITU.find(x => x.id === id); if (!s) return;
+  stLast = id;
+  const items = s.p.map(([pid, why]) => ({ f: findProduct(pid), why })).filter(x => x.f);
+  const html = `<div class="qz">
+    ${from === "quiz" || (qz && from === "back") ? `<div class="qz-nav"><button class="qz-back" data-qback="1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg>Назад</button><span></span></div>` : ""}
+    <div class="st-res-head"><span class="eyebrow" style="opacity:.9">Что поможет сейчас</span><b>${esc(s.t)}</b><p>${esc(s.s)} · ${items.length} ${plural(items.length, "средство", "средства", "средств")}</p>
+      <div class="qr-thumbs">${items.map(({ f }) => `<span>${f.p.img ? `<img src="img/pt/${f.p.img}.webp" alt="">` : ""}</span>`).join("")}</div></div>
+    <div class="qr-part">${items.map(({ f, why }, n) => { const p = f.p, d = directLinks(p);
+      return `<div class="qr-item"><span class="qr-n">${n + 1}</span>
+        <span class="qr-ph">${p.img ? `<img src="img/pt/${p.img}.webp" alt="" loading="lazy">` : (FORM[p.f] || FORM.bottle)}</span>
+        <span class="qr-txt"><b>${esc(p.n)}</b><em>Dermedic ${esc(f.l.light + f.l.bold)} · ${esc(p.v)}</em></span>
+        <span class="st-why"><b>Почему:</b> ${esc(why)}</span>
+        <span class="qr-acts">${d.length ? `<a class="qr-buy" href="${esc(outUrl(d[0].url, "online"))}" target="_blank" rel="noopener" data-direct="${esc(d[0].pid)}" data-product="${esc(p.n)}" data-situbuy="${esc(s.id)}">Купить в ${esc(d[0].partner.name)} ${I.ext}</a>` : `<button class="qr-buy" data-store="online" data-from="situation">Где купить</button>`}<button class="qr-more" data-sprod="${p.id}">Подробнее</button></span></div>`; }).join("")}</div>
+    <div class="st-tip">${QI.no}<span><b>Совет.</b> ${esc(s.tip)}</span></div>
+    <div class="st-warn">Если раздражение не проходит в течение нескольких дней, усиливается или появились новые симптомы — обратитесь к дерматологу. Рекомендации не заменяют консультацию врача.</div>
+    <button class="qr-again" ${qz ? 'data-qagain="1"' : 'data-quiz="situation"'}>↺ ${qz ? "Пройти подбор заново" : "Подобрать уход под мою кожу"}</button>
+    <button class="share-btn" data-sshare="${s.id}" style="margin:0;justify-self:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="M8.2 10.8l7.6-4.1M8.2 13.2l7.6 4.1"/></svg>Поделиться советом</button>
+  </div>`;
+  if (sheet.hidden) openSheet("Подбор ухода", "Ваш уход готов", html);
+  else { $("#sheetEyebrow").textContent = "Подбор ухода"; $("#sheetTitle").textContent = "Ваш уход готов"; $("#sheetBody").innerHTML = html; $("#sheetBody").scrollTop = 0; }
+  track("situation_result", { situation: id, from: from || "" });
+}
+document.addEventListener("click", e => {
+  const si = e.target.closest("[data-situ]"); if (si) { situResult(si.dataset.situ, si.dataset.from); return; }
+  const sp = e.target.closest("[data-sprod]"); if (sp) { const f = findProduct(sp.dataset.sprod); if (f) { track("situation_product", { situation: stLast, product: f.p.id }); openProduct(f.l.id, f.i); $("#sheetBody").insertAdjacentHTML("afterbegin", `<button class="qz-back" data-sret="1" style="margin-bottom:14px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg>Вернуться к подбору</button>`); } return; }
+  if (e.target.closest("[data-sret]") && stLast) { situResult(stLast, "back"); return; }
+  const sb = e.target.closest("[data-situbuy]"); if (sb) track("situation_buy", { situation: sb.dataset.situbuy, product: sb.dataset.product });
+  const ss = e.target.closest("[data-sshare]"); if (ss) { const s = SITU.find(x => x.id === ss.dataset.sshare); situShare(s); }
+});
+async function situShare(s){
+  const base = location.origin + location.pathname.replace(/[^/]*$/, "");
+  const url = /claude\.ai|claudeusercontent|^file:/.test(location.href) ? location.href.split("#")[0] + "#s-" + s.id : base + "s/" + s.id + "/";
+  track("share", { type:"situation", id: s.id });
+  try { if (navigator.share) { await navigator.share({ title: s.t + " — Dermedic", text: "Что поможет коже: " + s.t, url }); return; } } catch (e) { if (e && e.name === "AbortError") return; }
+  try { await navigator.clipboard.writeText(url); toast("Ссылка скопирована"); } catch (e) { toast(url); }
+}
 
 /* ===================== С ЭТИМ СРЕДСТВОМ ИСПОЛЬЗУЮТ ===================== */
 function pairsFor(p){
@@ -1499,7 +1632,7 @@ function openProduct(lineId, i){
     </div>`).join("")}</div>`;
   const cl = p.cl ? `<div class="clin">
       <div class="clin-h">Результаты исследований</div>
-      <div class="clin-grid">${p.cl.c.map(([v, t]) => `<div class="clin-c"><span class="clin-v">${esc(v)}</span><span class="clin-t">${esc(t)}</span></div>`).join("")}</div>
+      <div class="clin-grid">${p.cl.c.map(([v, t]) => clinCard(v, t)).join("")}</div>
       ${p.cl.m ? `<div class="clin-m">${esc(p.cl.m)}</div>` : ""}
       ${p.cl.n && p.cl.n.length ? `<div class="clin-m">${p.cl.n.map(esc).join("<br>")}</div>` : ""}
     </div>` : "";
@@ -1526,6 +1659,7 @@ function openProduct(lineId, i){
     </div>`);
   $("#sheetBody").dataset.product = p.n;
   track("view_product", { line: l.id, product: p.n });
+  clinAnimate($("#sheetBody"));
 }
 // раскрывающиеся разделы: открыт только один
 document.addEventListener("click", e => {
@@ -1539,9 +1673,262 @@ document.addEventListener("click", e => {
   }
 });
 
+/* ===================== НАУКА DERMEDIC: КАК РАБОТАЕТ ФОРМУЛА ===================== */
+// Тексты основаны на описаниях активных компонентов производителя (раздел «Активные ингредиенты»).
+const SCI = {
+  hydrain: { ac:"#2FA8E8", steps:[
+    { t:"Обезвоженная кожа", d:"Между клетками рогового слоя появляются промежутки — вода испаряется быстрее, чем кожа успевает её восполнить.", s:{ gap:1, evap:1, hold:.15 } },
+    { t:"Aqualare®: 4 формы гиалуроновой кислоты", d:"Молекулы разного размера работают на разной глубине рогового слоя. Трегалоза и гликозаминогликаны связывают и удерживают воду.", s:{ gap:.5, evap:.35, hold:.6, act:1, depth:.4 } },
+    { t:"Вода остаётся в коже", d:"Барьер укреплён, потеря воды снижается — кожа увлажнена сразу, глубоко и надолго.", s:{ gap:0, evap:0, hold:1, act:.25, depth:.4 } } ] },
+  cicatopy: { ac:"#2A9FC9", steps:[
+    { t:"Повреждённый барьер", d:"Кожа теряет воду и липиды, раздражители легко проникают внутрь — отсюда зуд, стянутость и покраснение.", s:{ gap:1, evap:.7, irr:1, red:.45, lip:0 } },
+    { t:"CICALINUM® и β-глюкан", d:"Омега-кислоты льняного масла, фитостеролы и полисахариды смягчают зуд, раздражение и сухость, поддерживают восстановление барьера.", s:{ gap:.6, evap:.35, irr:.35, red:.2, act:1, depth:.35 } },
+    { t:"Липиды на своём месте", d:"Биолипиды и эмоленты комплекса LipiDUO заполняют пространство между клетками — барьер снова защищает кожу.", s:{ gap:0, evap:0, irr:0, lip:1, act:.2, depth:.35 } } ] },
+  baby: { ac:"#7FA7DD", steps:[
+    { t:"Кожа малыша тоньше", d:"Роговой слой ещё формируется, поэтому кожа легко теряет влагу и быстрее раздражается.", s:{ thin:1, gap:.8, evap:.65, irr:.45 } },
+    { t:"Масла ши и какао, Super Hartolan™", d:"Эмоленты восполняют липиды и помогают коже удерживать влагу.", s:{ thin:1, gap:.25, evap:.15, irr:.3, lip:1, act:.8, depth:.18, ac:"#E9B44C" } },
+    { t:"CICALINUM® успокаивает", d:"Смягчает раздражение и сухость — коже комфортно с первого дня жизни.", s:{ thin:1, gap:0, evap:0, irr:0, lip:1, act:1, depth:.35 } } ] },
+  redness: { ac:"#C8326E", steps:[
+    { t:"Реактивные сосуды", d:"Капилляры легко расширяются от тепла, холода и стресса — появляются покраснение и ощущение жара.", s:{ red:1, dil:1, irr:.5 } },
+    { t:"Rosashield™ и Neurohesprid M™", d:"Ионы меди и магния, силикаты, витамины A, C, E и глюкозилгесперидин — комплексы для капиллярной и реактивной кожи.", s:{ red:.55, dil:.5, irr:.15, act:1, depth:.82 } },
+    { t:"Спокойный ровный тон", d:"Кожа меньше реагирует на внешние факторы, покраснение становится менее заметным.", s:{ red:.1, dil:.05, act:.25, depth:.82 } } ] },
+  normacne: { ac:"#21A49A", steps:[
+    { t:"Закупоренная пора", d:"Избыток себума и ороговевшие клетки закупоривают пору — в ней развивается воспаление.", s:{ pore:1, sebum:1, infl:1 } },
+    { t:"Ниацинамид, Veprolanum DH® и Oxyniacyde™", d:"Ниацинамид регулирует выработку себума, комплексы с ресвератролом и экстрактом шлемника работают с несовершенствами.", s:{ pore:1, sebum:.5, infl:.45, act:1, depth:.4 } },
+    { t:"Чистая пора", d:"Себума меньше, пора свободна — кожа выглядит ровнее и меньше блестит.", s:{ pore:1, sebum:.08, infl:0, act:.2, depth:.4 } } ] },
+  capilarte: { ac:"#1B8FD6", steps:[
+    { t:"Ослабленный фолликул", d:"Фолликул постепенно уменьшается, волос становится тоньше и легче выпадает.", s:{ fol:1, bulb:.15, hair:.15 } },
+    { t:"Procapil™ и Pilotantum™", d:"Procapil™ предупреждает миниатюризацию фолликула, Pilotantum™ улучшает микроциркуляцию кожи головы.", s:{ fol:1, bulb:.6, hair:.55, act:1, depth:.8, red:.35, dil:.4 } },
+    { t:"Крепкий корень", d:"Фолликул получает поддержку — волос крепче держится в коже головы.", s:{ fol:1, bulb:1, hair:1, act:.25, depth:.8, red:.2, dil:.3 } } ] },
+  melumin: { ac:"#0D4E79", steps:[
+    { t:"Пигментное пятно", d:"Меланин вырабатывается избыточно и накапливается в одном месте — на поверхности появляется пятно.", s:{ mel:1 } },
+    { t:"Melumin Tristage™", d:"Арбутин, витамин C и ниацинамид выравнивают тон, а мягкое отшелушивание обновляет поверхность кожи.", s:{ mel:.55, act:1, depth:.5 } },
+    { t:"Ровный тон под защитой SPF", d:"Пятна становятся светлее. Дневная защита SPF 50+ не даёт им появиться снова.", s:{ mel:.12, uv:.7, shield:1, act:.2, depth:.5 } } ] },
+  oilage: { ac:"#E39A2D", steps:[
+    { t:"Кожа в пременопаузе", d:"С возрастом кожа теряет липиды, плотность и упругость — волокна коллагена редеют.", s:{ col:.2, lip:0, gap:.55, evap:.4 } },
+    { t:"TriOleum™: три масла и изофлавоны", d:"Масла сои, авокадо и энотеры с соевыми изофлавонами поддерживают защитные функции и увлажнённость кожи.", s:{ col:.3, lip:1, gap:.05, evap:.05, act:1, depth:.2 } },
+    { t:"Renovage™ и коллаген", d:"Renovage™ повышает способность фибробластов вырабатывать коллаген — кожа плотнее и упругее.", s:{ col:1, lip:1, act:.8, depth:.85 } } ] },
+  sunbrella: { ac:"#EF7A22", steps:[
+    { t:"UVB, UVA, видимый свет и ИК", d:"Излучение проникает на разную глубину: UVB вызывает ожог, UVA и ИК ускоряют фотостарение, видимый свет усиливает пигментацию.", s:{ uv:1, mel:.5, col:.45, red:.35 } },
+    { t:"Защита широкого спектра", d:"Фильтры UVA и UVB задерживают лучи, Physavie® ограничивает воздействие ИК и высокоэнергетического видимого света.", s:{ uv:1, shield:1, mel:.2, col:.7 } },
+    { t:"Антиоксиданты MELAOX+H®", d:"Ниацинамид и астаксантин защищают от свободных радикалов — кожа защищена от фотостарения и пигментации.", s:{ uv:1, shield:1, mel:.05, col:1, act:1, depth:.45 } } ] }
+};
+const SCI_DEF = { gap:0, evap:0, hold:0, act:0, depth:.4, irr:0, red:0, dil:0, lip:.35, mel:0, col:.7, uv:0, shield:0, pore:0, sebum:0, infl:0, fol:0, bulb:0, hair:0, thin:0 };
+const SCI_REDUCE = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function SkinScene(cv){
+  const ctx = cv.getContext("2d"), W = 360, H = 240, S = 58;
+  let rnd = 7; const R = () => (rnd = (rnd * 16807) % 2147483647) / 2147483647;
+  const bricks = [0, 1].map(r => Array.from({ length: 16 }, () => [R() - .5, R() - .5]));
+  const cells = []; for (let r = 0; r < 4; r++) for (let i = 0; i < 24; i++) cells.push([i * 17 + (r % 2) * 8.5 - 6 + (R() - .5) * 2, r, (R() - .5) * 2, .9 + R() * .25]);
+  const melG = Array.from({ length: 46 }, () => [180 + (R() - .5) * 110 * (.4 + R() * .6), R(), R()]);
+  const water = Array.from({ length: 16 }, () => ({ x: 20 + R() * 320, o: R(), w: R() * 6 }));
+  const hold = Array.from({ length: 20 }, () => ({ x: 14 + R() * 332, y: R(), o: R() * 6 }));
+  const acts = Array.from({ length: 28 }, () => ({ x: 12 + R() * 336, o: R() * 1.6, dx: (R() - .5) * 40, j: R() }));
+  const sparks = Array.from({ length: 8 }, () => [20 + R() * 320, R() * 6]);
+  let cur = { ...SCI_DEF }, tgt = { ...SCI_DEF }, color = "#0068B4", raf = 0, run = false, t0 = performance.now(), dpr = 1, sc = 1;
+  const lerp = (a, b, k) => a + (b - a) * k, cl = v => Math.max(0, Math.min(1, v));
+  function size(){ const w = cv.clientWidth || 340; dpr = Math.min(2, devicePixelRatio || 1); sc = w / W; cv.width = Math.round(w * dpr); cv.height = Math.round(w * H / W * dpr); }
+  function hex(c, a){ const n = parseInt(c.slice(1), 16); return `rgba(${n >> 16},${n >> 8 & 255},${n & 255},${a})`; }
+  function draw(time){
+    const t = (time - t0) / 1000, c = cur;
+    ctx.setTransform(dpr * sc, 0, 0, dpr * sc, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+    // воздух
+    let g = ctx.createLinearGradient(0, 0, 0, S); g.addColorStop(0, "#F5FAFE"); g.addColorStop(1, "#FFFFFF"); ctx.fillStyle = g; ctx.fillRect(0, 0, W, S);
+    const rows = c.thin > .5 ? 1 : 2, E0 = S + rows * 11 + 1, B = 142;
+    // эпидермис и дерма
+    ctx.fillStyle = "#FDF1EE"; ctx.fillRect(0, S, W, B - S);
+    g = ctx.createLinearGradient(0, B, 0, H); g.addColorStop(0, "#FCE8E3"); g.addColorStop(1, "#F8DCD5"); ctx.fillStyle = g; ctx.fillRect(0, B, W, H - B);
+    // коллаген
+    for (let i = 0; i < 9; i++) {
+      const a = cl(c.col * 9 - i) ; if (a <= .01) continue;
+      const base = B + 10 + i * 10, amp = 4.5 - c.col * 2.5;
+      ctx.beginPath(); for (let x = 0; x <= W; x += 6) { const y = base + Math.sin(x * .045 + i * 1.7 + t * .4) * amp; x ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
+      ctx.strokeStyle = `rgba(226,160,150,${.55 * a})`; ctx.lineWidth = 2.2; ctx.stroke();
+    }
+    // капилляр
+    const vr = Math.round(lerp(231, 222, c.red)), vg = Math.round(lerp(170, 40, c.red)), vb = Math.round(lerp(175, 60, c.red));
+    ctx.save(); ctx.shadowColor = `rgba(224,40,60,${.6 * c.red})`; ctx.shadowBlur = 18 * c.red;
+    ctx.beginPath(); for (let x = -10; x <= W + 10; x += 6) { const y = 214 + Math.sin(x * .022 + 1) * 7; x > -10 ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
+    ctx.strokeStyle = `rgb(${vr},${vg},${vb})`; ctx.lineWidth = 5 + c.dil * 7 + Math.sin(t * 3) * c.dil * 1.2; ctx.lineCap = "round"; ctx.stroke(); ctx.restore();
+    // клетки эпидермиса
+    const rowsE = Math.max(1, Math.floor((B - E0) / 15));
+    cells.forEach(([x, r, j, s]) => { if (r >= rowsE) return; const y = E0 + 9 + r * 15 + j; ctx.beginPath(); ctx.ellipse(x, y, 7.6 * s, 6.4 * s, 0, 0, 7); ctx.fillStyle = "#FBE6E1"; ctx.fill(); ctx.strokeStyle = "#F1CFC8"; ctx.lineWidth = 1; ctx.stroke(); });
+    // меланин
+    if (c.mel > .01) {
+      melG.forEach(([x, d, o], i) => { if (i / melG.length > c.mel) return; const y = B - 4 - d * (B - E0 - 6); ctx.beginPath(); ctx.arc(x, y, 1.8 + o, 0, 7); ctx.fillStyle = `rgba(120,70,38,${.75 * cl(c.mel * 1.4)})`; ctx.fill(); });
+      ctx.beginPath(); ctx.ellipse(180, S - 1, 52, 4, 0, 0, 7); ctx.fillStyle = `rgba(120,72,40,${.4 * c.mel})`; ctx.fill();
+    }
+    // пора
+    if (c.pore > .01) {
+      ctx.save(); ctx.globalAlpha = c.pore;
+      ctx.beginPath(); ctx.moveTo(156, S); ctx.quadraticCurveTo(174, S + 30, 175, 150); ctx.lineTo(185, 150); ctx.quadraticCurveTo(186, S + 30, 204, S); ctx.closePath();
+      ctx.fillStyle = "#FFF9F3"; ctx.fill(); ctx.strokeStyle = "#EBC9BE"; ctx.lineWidth = 1.2; ctx.stroke();
+      ctx.clip(); const sh = c.sebum * (150 - S); ctx.fillStyle = "rgba(240,190,70,.9)"; ctx.fillRect(150, 150 - sh, 60, sh);
+      ctx.restore();
+      if (c.infl > .01) { const rg = ctx.createRadialGradient(180, 118, 4, 180, 118, 62); rg.addColorStop(0, `rgba(232,50,70,${.42 * c.infl * (.8 + .2 * Math.sin(t * 2.5))})`); rg.addColorStop(1, "rgba(232,50,70,0)"); ctx.fillStyle = rg; ctx.fillRect(110, S, 140, 130); }
+    }
+    // волосяной фолликул
+    if (c.fol > .01) {
+      ctx.save(); ctx.globalAlpha = c.fol;
+      ctx.beginPath(); ctx.moveTo(171, S); ctx.lineTo(171, 200); ctx.lineTo(189, 200); ctx.lineTo(189, S); ctx.fillStyle = "#F6D9CF"; ctx.fill();
+      const bR = 8 + 7 * c.bulb;
+      ctx.shadowColor = `rgba(255,190,90,${.9 * c.bulb})`; ctx.shadowBlur = 22 * c.bulb;
+      ctx.beginPath(); ctx.ellipse(180, 206, bR, bR * .85, 0, 0, 7); ctx.fillStyle = `rgb(${Math.round(lerp(214, 242, c.bulb))},${Math.round(lerp(176, 170, c.bulb))},${Math.round(lerp(160, 110, c.bulb))})`; ctx.fill();
+      ctx.restore();
+    }
+    // роговой слой: «кирпичи» и липиды
+    ctx.fillStyle = `rgba(233,180,76,${.12 + c.lip * .7})`; ctx.fillRect(0, S, W, rows * 11);
+    for (let r = 0; r < rows; r++) {
+      const sp = 1.4 + c.gap * 5.5, bw = 28;
+      for (let i = 0; i < 16; i++) {
+        const [jx, jy] = bricks[r][i], x = -14 * r + i * (bw + sp) + jx * c.gap * 3, y = S + 1 + r * 11 + jy * c.gap * 3.4;
+        ctx.beginPath(); ctx.roundRect ? ctx.roundRect(x, y, bw, 9, 2.5) : ctx.rect(x, y, bw, 9);
+        ctx.fillStyle = "#F6E9DE"; ctx.fill(); ctx.strokeStyle = "#E4CDBB"; ctx.lineWidth = .8; ctx.stroke();
+      }
+    }
+    if (c.fol > .01) { ctx.save(); ctx.globalAlpha = c.fol; const hw = 1.2 + c.hair * 3.4, top = lerp(S - 18, -4, c.hair);
+      ctx.beginPath(); ctx.moveTo(180 - hw / 2, 206); ctx.lineTo(180 - hw / 2 + (1 - c.hair) * 4, top); ctx.lineTo(180 + hw / 2 + (1 - c.hair) * 4, top); ctx.lineTo(180 + hw / 2, 206); ctx.closePath();
+      ctx.fillStyle = "#4A3426"; ctx.fill(); ctx.restore(); }
+    // вода внутри кожи
+    if (c.hold > .01) hold.forEach(p => { const y = E0 + 6 + p.y * (B - E0 - 12) + Math.sin(t * 1.5 + p.o) * 2; drop(p.x, y, 2.6, `rgba(63,169,245,${.85 * c.hold})`); });
+    // раздражение
+    if (c.irr > .01) sparks.forEach(([x, o]) => { const a = c.irr * (.45 + .55 * Math.sin(t * 5 + o)); if (a <= 0) return; ctx.save(); ctx.translate(x, S - 6); ctx.strokeStyle = `rgba(224,48,63,${a})`; ctx.lineWidth = 1.6; ctx.beginPath(); ctx.moveTo(-5, 0); ctx.lineTo(-2, -4); ctx.lineTo(1, 0); ctx.lineTo(4, -4); ctx.stroke(); ctx.restore(); });
+    // покраснение поверх кожи
+    if (c.red > .45) { ctx.fillStyle = `rgba(230,60,85,${(c.red - .45) * .22})`; ctx.fillRect(0, S, W, H - S); }
+    // активные молекулы
+    if (c.act > .01) {
+      const ty = S + c.depth * (H - S - 10);
+      ctx.save(); ctx.shadowColor = color; ctx.shadowBlur = 8;
+      acts.forEach((p, i) => {
+        if (i / acts.length > c.act) return;
+        const ph = ((t * .32 + p.o) % 1.6) / 1.6, fall = Math.min(1, ph * 1.7), e = 1 - Math.pow(1 - fall, 3);
+        const x = p.x + p.dx * e * .3 + Math.sin(t * 1.3 + p.j * 6) * (fall >= 1 ? 4 : 1.5), y = lerp(-6, ty + (p.j - .5) * 22, e);
+        const a = (fall < 1 ? 1 : 1 - (ph * 1.7 - 1) / .7) * cl(c.act * 1.5); if (a <= 0) return;
+        ctx.globalAlpha = a; ctx.beginPath(); ctx.arc(x, y, 3.1, 0, 7); ctx.fillStyle = color; ctx.fill();
+        ctx.beginPath(); ctx.arc(x - 1, y - 1, 1, 0, 7); ctx.fillStyle = "rgba(255,255,255,.8)"; ctx.fill();
+      });
+      ctx.restore();
+    }
+    // испарение воды
+    if (c.evap > .01) water.forEach(p => { const ph = (t * .22 + p.o) % 1, y = lerp(E0 + 20, -8, ph), x = p.x + Math.sin(ph * 6 + p.w) * 4; drop(x, y, 2.4, `rgba(63,169,245,${c.evap * Math.sin(ph * Math.PI) * .9})`); });
+    // излучение
+    if (c.uv > .01) {
+      const R4 = [["UVB", "#8B5CF6", E0 + 4], ["UVA", "#B46BEA", 172], ["VL", "#F2A007", 196], ["IR", "#E5484D", 230]];
+      R4.forEach(([n, col, dep], k) => {
+        const x = 52 + k * 85, end = lerp(dep, S - 6, c.shield);
+        ctx.save(); ctx.globalAlpha = c.uv; ctx.strokeStyle = col; ctx.lineWidth = 2.2; ctx.setLineDash([6, 5]); ctx.lineDashOffset = -t * 28;
+        ctx.beginPath(); ctx.moveTo(x - 18, 4); ctx.lineTo(x, end); ctx.stroke();
+        if (c.shield > .05) { ctx.globalAlpha = c.uv * c.shield; ctx.beginPath(); ctx.moveTo(x, end); ctx.lineTo(x + 18, 8); ctx.stroke(); }
+        ctx.setLineDash([]); ctx.globalAlpha = c.uv * (1 - c.shield * .6); ctx.beginPath(); ctx.arc(x, end, 3, 0, 7); ctx.fillStyle = col; ctx.fill();
+        ctx.globalAlpha = c.uv; ctx.font = "600 9px Inter, system-ui, sans-serif"; ctx.fillStyle = col; ctx.fillText(n, x - 34, 14);
+        ctx.restore();
+      });
+    }
+    if (c.shield > .01) { const sg = ctx.createLinearGradient(0, S - 8, 0, S); sg.addColorStop(0, "rgba(239,122,34,0)"); sg.addColorStop(1, `rgba(239,122,34,${.42 * c.shield})`); ctx.fillStyle = sg; ctx.fillRect(0, S - 8, W, 8);
+      ctx.fillStyle = `rgba(255,255,255,${.55 * c.shield})`; const sx = ((t * 60) % (W + 80)) - 40; ctx.fillRect(sx, S - 3, 40, 1.5); }
+    // подписи слоёв
+    ctx.font = "500 8.5px Inter, system-ui, sans-serif"; ctx.textBaseline = "middle";
+    [["роговой слой", S + rows * 5.5 + 1], ["эпидермис", (E0 + B) / 2 + 2], ["дерма", B + 26]].forEach(([s, y]) => { const w = ctx.measureText(s).width + 10; ctx.fillStyle = "rgba(255,255,255,.85)"; ctx.beginPath(); ctx.roundRect ? ctx.roundRect(W - w - 6, y - 7, w, 14, 7) : ctx.rect(W - w - 6, y - 7, w, 14); ctx.fill(); ctx.fillStyle = "#5B6B7B"; ctx.fillText(s, W - w - 1, y + .5); });
+    ctx.textBaseline = "alphabetic";
+  }
+  function drop(x, y, r, col){ ctx.beginPath(); ctx.moveTo(x, y - r * 1.9); ctx.quadraticCurveTo(x + r * 1.15, y - r * .3, x, y + r); ctx.quadraticCurveTo(x - r * 1.15, y - r * .3, x, y - r * 1.9); ctx.fillStyle = col; ctx.fill(); }
+  function loop(time){
+    if (!cv.isConnected) { run = false; return; }
+    const k = SCI_REDUCE ? 1 : .055; for (const key in tgt) cur[key] = lerp(cur[key], tgt[key], k);
+    draw(SCI_REDUCE ? t0 : time);
+    if (run) raf = requestAnimationFrame(loop);
+  }
+  size(); window.addEventListener("resize", () => { if (cv.isConnected) size(); });
+  return {
+    set(state, col, instant){ tgt = { ...SCI_DEF, ...state }; color = col; if (instant) cur = { ...tgt }; if (!run) draw(performance.now()); },
+    play(){ if (run) return; run = true; raf = requestAnimationFrame(loop); },
+    stop(){ run = false; cancelAnimationFrame(raf); }
+  };
+}
+function sciHTML(lineId, chips){
+  return `<div class="sci" data-sciline="${lineId}">
+    ${chips ? `<div class="sci-chips">${LINES.filter(l => SCI[l.id]).map(l => `<button class="sci-chip${l.id === lineId ? " on" : ""}" data-sciset="${l.id}" style="--lc:${l.lc}">${lineName(l)}</button>`).join("")}</div>` : ""}
+    <div class="sci-card">
+      <div class="sci-stage"><canvas aria-hidden="true"></canvas><span class="sci-tag"></span></div>
+      <div class="sci-bars"></div>
+      <div class="sci-txt" aria-live="polite"><small></small><b></b><p></p></div>
+      <div class="sci-acts"><button class="sci-cat" data-scicat="1">Средства линейки →</button></div>
+    </div>
+  </div>`;
+}
+const SCI_DUR = 5200;
+function sciMount(root, from){
+  const cv = root.querySelector("canvas"), scene = SkinScene(cv);
+  let line = root.dataset.sciline, step = 0, timer = 0, startAt = 0, visible = false;
+  const bars = root.querySelector(".sci-bars"), txt = root.querySelector(".sci-txt");
+  function render(instant){
+    const L = SCI[line], l = LINES.find(x => x.id === line), st = L.steps[step];
+    root.style.setProperty("--lc", l.lc);
+    root.querySelector(".sci-tag").textContent = "Dermedic " + l.light + l.bold;
+    bars.innerHTML = L.steps.map((s, i) => `<button class="sci-bar${i < step ? " done" : ""}${i === step ? " on" : ""}" data-scistep="${i}" aria-label="Шаг ${i + 1}: ${esc(s.t)}"><i></i></button>`).join("");
+    txt.querySelector("small").textContent = `Шаг ${step + 1} из ${L.steps.length}`;
+    txt.querySelector("b").textContent = st.t; txt.querySelector("p").textContent = st.d;
+    txt.classList.remove("in"); void txt.offsetWidth; txt.classList.add("in");
+    root.querySelectorAll(".sci-chip").forEach(b => b.classList.toggle("on", b.dataset.sciset === line));
+    scene.set(st.s, st.s.ac || L.ac, instant);
+    restart();
+  }
+  function restart(){ clearTimeout(timer); const bar = bars.querySelector(".on i"); if (bar) { bar.style.animation = "none"; void bar.offsetWidth; bar.style.animation = visible && !SCI_REDUCE ? `sciBar ${SCI_DUR}ms linear forwards` : "none"; if (!visible || SCI_REDUCE) bar.style.width = "100%"; }
+    if (visible && !SCI_REDUCE) timer = setTimeout(() => { step = (step + 1) % SCI[line].steps.length; render(); }, SCI_DUR); }
+  root.addEventListener("click", e => {
+    const s = e.target.closest("[data-scistep]"); if (s) { step = +s.dataset.scistep; render(); track("science_step", { line, step: step + 1 }); return; }
+    const c = e.target.closest("[data-sciset]"); if (c) { line = c.dataset.sciset; step = 0; root.dataset.sciline = line; render(); track("science_line", { line, from }); c.scrollIntoView({ block:"nearest", inline:"center", behavior:"smooth" }); return; }
+    if (e.target.closest("[data-scicat]")) { track("science_catalog", { line }); if (!sheet.hidden) closeSheet(); location.hash = "line-" + line; }
+  });
+  const io = new IntersectionObserver(([en]) => { visible = en.isIntersecting; if (visible) { scene.play(); if (!startAt) { startAt = 1; track("science_view", { line, from }); } } else scene.stop(); restart(); }, { threshold:.35 });
+  io.observe(cv);
+  render(true);
+  return { setLine(id){ line = id; step = 0; render(true); } };
+}
+function sciOpen(lineId, from){
+  const l = LINES.find(x => x.id === lineId);
+  openSheet("Наука Dermedic", "Как работает " + l.light + l.bold, sciHTML(lineId, false));
+  sciMount($("#sheetBody .sci"), from);
+}
+document.addEventListener("click", e => { const b = e.target.closest("[data-sciopen]"); if (b) { e.preventDefault(); sciOpen(b.dataset.sciopen, b.dataset.from || ""); } });
+(function(){ const h = $("#sciHome"); if (h) { h.innerHTML = sciHTML("hydrain", true); sciMount(h.querySelector(".sci"), "home"); } })();
+
+/* ===================== ЖИВЫЕ ЦИФРЫ ИССЛЕДОВАНИЙ ===================== */
+function clinParse(v){ const m = String(v).match(/^([+−-]?)(\d+(?:[.,]\d+)?)(%?)(\**)$/); if (!m) return null; return { sign: m[1] === "-" ? "−" : m[1], n: parseFloat(m[2].replace(",", ".")), pct: m[3], star: m[4] }; }
+function clinCard(v, t){
+  const p = clinParse(v), C = 2 * Math.PI * 30;
+  if (!p) return `<div class="clin-c"><span class="clin-v">${esc(v)}</span><span class="clin-t">${esc(t)}</span></div>`;
+  const fill = Math.min(100, p.n), arrow = p.sign === "−" ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>` : p.sign === "+" ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>` : "";
+  return `<div class="clin-c">
+    <div class="ring" data-fill="${fill}" data-to="${p.n}" data-sign="${p.sign}" data-suf="${p.pct}">
+      <svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="30" class="r-bg"/><circle cx="36" cy="36" r="30" class="r-fg" stroke-dasharray="0 ${C.toFixed(1)}" transform="rotate(-90 36 36)"/></svg>
+      <span class="ring-v">${arrow ? `<i>${arrow}</i>` : ""}<span><b>${p.sign}${String(p.n).replace(".", ",")}${p.pct}</b>${p.star ? `<sup>${p.star}</sup>` : ""}</span></span>
+    </div>
+    <span class="clin-t">${esc(t)}</span></div>`;
+}
+function clinAnimate(root){
+  const rings = root.querySelectorAll(".ring:not(.done)"); if (!rings.length) return;
+  const C = 2 * Math.PI * 30;
+  const io = new IntersectionObserver(ents => ents.forEach(en => {
+    if (!en.isIntersecting) return; io.unobserve(en.target);
+    const r = en.target, fg = r.querySelector(".r-fg"), b = r.querySelector(".ring-v b"), to = +r.dataset.to, fill = +r.dataset.fill, sign = r.dataset.sign, suf = r.dataset.suf;
+    r.classList.add("done");
+    if (SCI_REDUCE) { fg.setAttribute("stroke-dasharray", `${C * fill / 100} ${C}`); return; }
+    const t0 = performance.now(), D = 1400, dec = to % 1 ? 1 : 0;
+    (function tick(now){ const k = Math.min(1, (now - t0) / D), e = 1 - Math.pow(1 - k, 3);
+      fg.setAttribute("stroke-dasharray", `${(C * fill / 100 * e).toFixed(1)} ${C.toFixed(1)}`);
+      b.textContent = sign + (to * e).toFixed(dec).replace(".", ",") + suf;
+      if (k < 1 && r.isConnected) requestAnimationFrame(tick); })(t0);
+  }), { threshold:.6 });
+  rings.forEach(r => io.observe(r));
+}
+
 /* ===================== ROUTING ===================== */
 function route(){
   if (location.hash === "#spf") { $("#viewHome").hidden = true; $("#viewCatalog").hidden = false; $("#backBtn").hidden = false; renderCatalog($("#q").value); setTimeout(() => { const el = document.getElementById("line-sunbrella"); if (el) el.scrollIntoView(); spfOpen("link"); }, 150); return; }
+  if (location.hash === "#situ" || location.hash.startsWith("#s-")) { $("#viewHome").hidden = false; $("#viewCatalog").hidden = true; $("#backBtn").hidden = true; const sid = location.hash.slice(3); setTimeout(() => { if (location.hash === "#situ" || !SITU.some(s => s.id === sid)) quizStart("link"); else { qz = null; situResult(sid, "link"); } }, 150); return; }
   if (location.hash === "#quiz") { $("#viewHome").hidden = false; $("#viewCatalog").hidden = true; $("#backBtn").hidden = true; setTimeout(() => quizStart("link"), 150); return; }
   const deep = location.hash.match(/^#(p|v)-([a-z]+-\d+)$/);
   if (deep) {
